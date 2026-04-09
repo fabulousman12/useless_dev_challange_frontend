@@ -11,9 +11,11 @@ import './index.css';
 const LOADING_STEPS = [
   "Initializing cloud infrastructure...",
   "Contacting AI models...",
-  "Applying enterprise compliance...",
+
   "Expanding URL length...",
+  "Hallucinating The results..",
   "Synthesizing synergy matrices...",
+  "Guu guuu gaa gaaaa ...",
   "Finalizing..."
 ];
 
@@ -103,10 +105,10 @@ function App() {
         "Un-optimizing bandwidth...",
         "Removing blockchain consensus...",
         "Bla bla blaaaaa blaaaa",
-        "Stripping synergistic layers...",
+
         "Disabling AI confidence protocols...",
         "Running native HTTP protocols (DANGEROUS)...",
-        "Reverting to prehistoric URL structures...",
+        "Guu guuu gaa gaaaa ...",
         "Did absolutely nothing"
       ];
 
@@ -114,6 +116,7 @@ function App() {
         setLoadingStep(`[DANGER] ${waitPhrases[i % waitPhrases.length]} | ${10 - i}s remaining`);
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
+      
 
       let finalUrl = url.startsWith('http') ? url : `https://${url}`;
       setResult({
